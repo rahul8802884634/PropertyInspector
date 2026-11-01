@@ -1,0 +1,9 @@
+# Screen: open the files area for the current case.
+# Called by the files journey.
+# Put the taps and checks for this screen below, then remove the draft anchor.
+appId: com.ticpropertyinspector.app.staging
+name: Open files
+tags:
+  - util
+---
+- evalScript: ${output.step = 'open_files'}

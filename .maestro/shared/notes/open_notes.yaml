@@ -1,0 +1,9 @@
+# Screen: open the notes list for the current case.
+# Called by the notes journey, before create and again after reopen.
+# Put the taps and checks for this screen below, then remove the draft anchor.
+appId: com.ticpropertyinspector.app.staging
+name: Open notes
+tags:
+  - util
+---
+- evalScript: ${output.step = 'open_notes'}

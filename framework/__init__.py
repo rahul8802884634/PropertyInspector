@@ -1,1 +1,0 @@
-"""PropertyInspector automation framework."""

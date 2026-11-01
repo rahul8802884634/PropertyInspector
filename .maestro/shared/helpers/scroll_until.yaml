@@ -1,0 +1,14 @@
+# Scrolls until TARGET_TEXT is on screen.
+# Callers pass TARGET_TEXT through runFlow env.
+appId: com.ticpropertyinspector.app.staging
+name: Scroll until text
+tags:
+  - util
+---
+- scrollUntilVisible:
+    element: ${TARGET_TEXT}
+    direction: DOWN
+    timeout: 20000
+    speed: 40
+    visibilityPercentage: 100
+    centerElement: true

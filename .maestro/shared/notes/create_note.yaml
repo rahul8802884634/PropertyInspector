@@ -1,0 +1,10 @@
+# Screen: create a note, then update its title and body.
+# Called by the notes journey.
+# Env: NOTE_TITLE, NOTE_BODY, NOTE_TITLE_UPDATED, NOTE_BODY_UPDATED
+# Put the taps and checks for this screen below, then remove the draft anchor.
+appId: com.ticpropertyinspector.app.staging
+name: Create note
+tags:
+  - util
+---
+- evalScript: ${output.step = 'create_note'}

@@ -1,0 +1,10 @@
+# Screen: sync the case to the legacy app.
+# Called by the notes journey.
+# Env: APP_VERSION
+# Put the taps and checks for this screen below, then remove the draft anchor.
+appId: com.ticpropertyinspector.app.staging
+name: Sync to legacy
+tags:
+  - util
+---
+- evalScript: ${output.step = 'sync_to_legacy'}

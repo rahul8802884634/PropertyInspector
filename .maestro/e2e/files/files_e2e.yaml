@@ -1,0 +1,13 @@
+appId: com.ticpropertyinspector.app.staging
+name: files_e2e
+tags:
+  - e2e
+  - draft
+env:
+  CALENDAR_DAY: "11"
+  PROPERTY_ADDRESS: "Rougsøvej 2, 8940 Randers SV"
+  APP_VERSION: "v1.1.3"
+---
+- runFlow: ../../shared/app/launch_app.yaml
+- runFlow: ../../shared/case/open_case.yaml
+- runFlow: ../../shared/files/open_files.yaml
