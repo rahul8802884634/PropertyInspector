@@ -1,0 +1,10 @@
+# Screen: reopen the same case after sync.
+# Called by the notes journey.
+# Env: PROPERTY_ADDRESS, CALENDAR_DAY
+# Put the taps and checks for this screen below, then remove the draft anchor.
+appId: com.ticpropertyinspector.app.staging
+name: Reopen case
+tags:
+  - util
+---
+- evalScript: ${output.step = 'reopen_case'}

@@ -1,0 +1,20 @@
+# PropertyInspector Maestro workspace.
+# Default run is the launch smoke. Notes and files stay tagged draft
+# until the screen steps are filled in under shared/.
+appId: com.ticpropertyinspector.app.staging
+flows:
+  - "smoke/*"
+  - "e2e/**"
+excludeTags:
+  - util
+  - draft
+executionOrder:
+  continueOnFailure: false
+  flowsOrder:
+    - AppLaunch
+testOutputDir: reports
+platform:
+  android:
+    disableAnimations: true
+  ios:
+    disableAnimations: true

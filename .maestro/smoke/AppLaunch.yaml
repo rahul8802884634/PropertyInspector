@@ -1,0 +1,7 @@
+appId: com.ticpropertyinspector.app.staging
+name: App launch
+tags:
+  - smoke
+---
+- runFlow: ../shared/app/launch_app.yaml
+- takeScreenshot: app_launched

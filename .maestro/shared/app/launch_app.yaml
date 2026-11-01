@@ -1,0 +1,6 @@
+appId: com.ticpropertyinspector.app.staging
+name: Launch app
+tags:
+  - util
+---
+- launchApp
